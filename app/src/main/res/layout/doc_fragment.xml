@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Doc_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Fragment 1"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/dataFrom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textColor="@color/black"
+        android:textSize="26dp"/>
+
+    <EditText
+        android:id="@+id/emailFeild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="300dp"
+        android:ems="10"
+        android:hint="Data to Fragment 2"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doc_btn"
+        android:text="Send Data to Fragment 2"
+        android:backgroundTint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emailFeild"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

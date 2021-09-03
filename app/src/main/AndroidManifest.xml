@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AntentalCare">
         <activity
+            android:name=".SignUp"
+            android:exported="true" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true" />
         <activity
