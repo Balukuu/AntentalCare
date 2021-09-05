@@ -9,12 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AntentalCare">
-        <activity
-            android:name=".LogIn"
-            android:exported="true" />
-        <activity
-            android:name=".SplashActivity"
-            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
