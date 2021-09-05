@@ -4,42 +4,39 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.material.tabs.TabLayout;
+
 public class SignUp extends AppCompatActivity {
 
-    Button firstFragmentBtn, secondFragmentBtn;
+    TabLayout tabLayout;
+    ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        firstFragmentBtn = findViewById(R.id.doc_btn);
-        secondFragmentBtn = findViewById(R.id.mother_btn);
+        tabLayout.findViewById(R.id.tabs_layout);
+        viewPager.findViewById(R.id.forfragments);
 
-        firstFragmentBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                replaceFragment(new Doc_fragment());
-            }});
+        tabLayout.addTab(tabLayout.newTab().setText("Doctor"));
+        tabLayout.addTab(tabLayout.newTab().setText("Mother"));
+        tabLayout.setTabGravity(tabLayout.GRAVITY_FILL);
 
-        secondFragmentBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                replaceFragment(new ExpectingMother());
-            }});
-    }
+        final SignupAdapter adapter = new SignupAdapter(getSupportFragmentManager(), this
+        , this.tabLayout.getTabCount());
 
-    private void replaceFragment(Fragment fragment) {
+        viewPager.setAdapter(adapter);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frameLayout,fragment);
-        fragmentTransaction.commit();
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout
+        ));
 
-    }
+        }
+
 }
