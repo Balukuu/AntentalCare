@@ -1,3 +1,5 @@
 <resources>
 
+    <string name="sample_txt">sample_txt</string>
+    <string name="doctor_view_txt">doctor_view_txt</string>
 </resources>
