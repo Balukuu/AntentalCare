@@ -2,4 +2,5 @@
 
     <string name="sample_txt">sample_txt</string>
     <string name="doctor_view_txt">doctor_view_txt</string>
+    <string name="mother_view">mother_view</string>
 </resources>

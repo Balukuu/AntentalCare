@@ -45,7 +45,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/clicked_btn"
-            android:text="doctor"
+            android:text="@string/doctor_view_txt"
             app:layout_constraintEnd_toStartOf="@id/mother_btn"
             app:layout_constraintStart_toStartOf="@+id/bg_shape"
             app:layout_constraintTop_toTopOf="@id/bg_shape" />
@@ -56,7 +56,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/no_click_btn"
-            android:text="mother_view"
+            android:text="@string/mother_view"
             app:layout_constraintEnd_toEndOf="@id/bg_shape"
             app:layout_constraintStart_toEndOf="@id/doc_btn"
             app:layout_constraintTop_toTopOf="@id/bg_shape" />
