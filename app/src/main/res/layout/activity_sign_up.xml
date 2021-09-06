@@ -33,10 +33,11 @@
             android:id="@+id/forfragments"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
+            app:layout_constraintBottom_toBottomOf="@id/bg_shape"
+            app:layout_constraintEnd_toEndOf="@+id/mother_btn"
             app:layout_constraintStart_toStartOf="@+id/doc_btn"
             app:layout_constraintTop_toBottomOf="@id/doc_btn"
-            app:layout_constraintEnd_toEndOf="@+id/mother_btn"
-            app:layout_constraintBottom_toBottomOf="@id/bg_shape"/>
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/doc_btn"
@@ -44,7 +45,7 @@
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/clicked_btn"
-            android:text="@string/doctor_view_txt"
+            android:text="doctor"
             app:layout_constraintEnd_toStartOf="@id/mother_btn"
             app:layout_constraintStart_toStartOf="@+id/bg_shape"
             app:layout_constraintTop_toTopOf="@id/bg_shape" />
@@ -53,9 +54,9 @@
             android:id="@+id/mother_btn"
             android:layout_width="150dp"
             android:layout_height="50dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/no_click_btn"
-            android:text="@string/mother_view"
+            android:text="mother_view"
             app:layout_constraintEnd_toEndOf="@id/bg_shape"
             app:layout_constraintStart_toEndOf="@id/doc_btn"
             app:layout_constraintTop_toTopOf="@id/bg_shape" />
