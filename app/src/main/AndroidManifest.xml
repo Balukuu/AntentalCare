@@ -10,20 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AntentalCare">
         <activity
-            android:name=".PregnuncyDetails"
-            android:exported="true" />
-        <activity
-            android:name=".MedicalDetails"
-            android:exported="true" />
-        <activity
-            android:name=".DoctorView"
-            android:exported="true" />
-        <activity
-            android:name=".MotherView"
-            android:exported="true" />
-        <activity
-            android:name=".Trial"
-            android:exported="true" />
+            android:name=".LogIn"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
         <activity
             android:name=".SignUp"
             android:exported="true"
@@ -39,7 +28,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="true"/>
     </application>
 
 </manifest>

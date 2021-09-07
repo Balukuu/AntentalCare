@@ -18,7 +18,7 @@ public class SplashActivity extends Activity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this, SignUp.class));
+                startActivity(new Intent(SplashActivity.this, LogIn.class));
                 finish();
             }
         },15000);
