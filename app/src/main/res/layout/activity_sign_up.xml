@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/bg_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".SignUp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bg_shape"
+        android:layout_width="359dp"
+        android:layout_height="496dp"
+        android:background="@drawable/sign_up_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_layout"
+        app:layout_constraintEnd_toEndOf="@+id/bg_layout"
+        app:layout_constraintStart_toStartOf="@+id/bg_layout"
+        app:layout_constraintTop_toTopOf="@+id/bg_layout"
+        app:layout_constraintVertical_bias="0.825">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_shape"
+            app:layout_constraintEnd_toEndOf="@+id/bg_shape"
+            app:layout_constraintStart_toStartOf="@+id/bg_shape"
+            app:layout_constraintTop_toTopOf="@+id/bg_shape"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/forfragments"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            app:layout_constraintStart_toStartOf="@+id/doc_btn"
+            app:layout_constraintTop_toBottomOf="@id/doc_btn"
+            app:layout_constraintEnd_toEndOf="@+id/mother_btn"
+            app:layout_constraintBottom_toBottomOf="@id/bg_shape"/>
+
+        <Button
+            android:id="@+id/doc_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/clicked_btn"
+            android:text="@string/doctor_view_txt"
+            app:layout_constraintEnd_toStartOf="@id/mother_btn"
+            app:layout_constraintStart_toStartOf="@+id/bg_shape"
+            app:layout_constraintTop_toTopOf="@id/bg_shape" />
+
+        <Button
+            android:id="@+id/mother_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/no_click_btn"
+            android:text="@string/mother_view"
+            app:layout_constraintEnd_toEndOf="@id/bg_shape"
+            app:layout_constraintStart_toEndOf="@id/doc_btn"
+            app:layout_constraintTop_toTopOf="@id/bg_shape" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

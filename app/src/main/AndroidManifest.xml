@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AntentalCare">
         <activity
-            android:name=".SplashActivity"
+            android:name=".Trial"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SignUp"
             android:exported="true"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -22,6 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>
