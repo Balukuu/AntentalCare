@@ -1,6 +1,14 @@
 <resources>
 
-    <string name="sample_txt">sample_txt</string>
-    <string name="doctor_view_txt">doctor_view_txt</string>
-    <string name="mother_view">mother_view</string>
+
+
+    <string name="app_name">Antental Care</string>
+    <string name="todo">TODO</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="doctor_view_txt">Doctor View</string>
+    <string name="sample_txt">SEND DATA OVER</string>
+    <string name="doc_txt">VIEW DOCTOR</string>
+    <string name="mother_view">MOTHER VIEW</string>
+
 </resources>

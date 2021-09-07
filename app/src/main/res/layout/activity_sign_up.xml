@@ -30,7 +30,7 @@
             app:layout_constraintTop_toTopOf="@+id/bg_shape"/>
 
         <androidx.viewpager.widget.ViewPager
-            android:id="@+id/forfragments"
+            android:id="@+id/for_fragments"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
             app:layout_constraintBottom_toBottomOf="@id/bg_shape"
